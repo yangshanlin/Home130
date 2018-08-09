@@ -1,29 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1"/>
-    <link rel="icon" href="favicon.ico"/>
-    <title>130's Homepage</title>
-    <style type="text/css" media="all">
-        body {
-            background: url(bg.jpg);
-        }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="keywords">
+    <meta name="description" content="description">
 
-        .head-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 100px;
-        }
+    <title>130's Home</title>
 
-    </style>
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/hexagon.css" rel="stylesheet"/>
 </head>
-
 <body>
-<div align="center">
-    <a href="http://magicshanlin.com">
-        <img class="head-img" src="ic_head.jpg">
-    </a>
+
+<canvas id="canvas"></canvas>
+<div class="row">
+    <section class="lab">
+        <article>
+            <div id="ManPosts">
+                <div class="lab_item"><a href="https://blog.yangshanlin.cn/">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/blog.jpg');">
+                                <span class="text-content"><span>Blog</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="lab_item"><a href="https://me.yangshanlin.cn">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/about.jpg');">
+                                <span class="text-content"><span>About</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="lab_item"><a href="https://yangshanlin.cn">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/open_source.jpg');">
+                                <span class="text-content"><span>Open Source</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="lab_item"><a href="mailto:yangshanlinlin@gmail.com">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/email.jpg');">
+                                <span class="text-content"><span>Email</span></span></div>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="lab_item"><a href="https://github.com/yangshanlin">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/github.jpg');">
+                                <span class="text-content"><span>Github</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="lab_item"><a href="https://twitter.com/yangshanlin">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/twitter.jpg');">
+                                <span class="text-content"><span>Twitter</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="lab_item"><a href="https://facebook.com/yangshanlinlin">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/facebook.jpg');">
+                                <span class="text-content"><span>Facebook</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="lab_item"><a href="https://www.instagram.com/yangshanlin/">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/instagram.jpg');">
+                                <span class="text-content"><span>Instagram</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+                <div class="lab_item"><a href="https://telegram.me/yangshanlin">
+                    <div class="hexagon hexagon2">
+                        <div class="hexagon-in1">
+                            <div class="hexagon-in2"
+                                 style="background-image: url('images/telegram.jpg');">
+                                <span class="text-content"><span>Telegram</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+
+            </div>
+        </article>
+    </section>
 </div>
+
+<script src="js/canvasstar.js"></script>
+<script>
+    var CanvasStar = new CanvasStar;
+    CanvasStar.init();
+</script>
 </body>
 </html>
